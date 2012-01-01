@@ -22,18 +22,18 @@ class SiriProxy::Plugin::TwitterTrends < SiriProxy::Plugin
 	  trends(trend) #in the function, request_completed will be called when the thread is finished
 	end
 	
-	listen_for /twitter stories/i do |phrase|
-	  story = "today"
-	  stories(story) #in the function, request_completed will be called when the thread is finished
-	end
+	#listen_for /twitter stories/i do |phrase|
+	#  story = "today"
+	#  stories(story) #in the function, request_completed will be called when the thread is finished
+	#end
 	
 	def trends(t)
 	  
     say "Checking Twitter trends..."
 	  
-		doc = Nokogiri::HTML(open("http://twitter.com/#!/i/discover"))
-    list = doc.css(".js-trends")
-    entry =  doc.css("li a")
+		doc = Nokogiri::HTML(open("http://www.whatthetrend.com/"))
+    list = doc.css("#trending")
+    entry =  doc.css("h3 a")
     
     if entry.nil?
       say "I'm sorry, I didn't see any Twitter Trends. I failed you..."
