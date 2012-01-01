@@ -2,7 +2,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "siriproxy-twitter-trends"
+  s.name        = "siriproxy-twittertrends"
   s.version     = "0.0.1" 
   s.authors     = ["vinced45"]
   s.email       = [""]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{An Siri Proxy Plugin for Twitter Trends}
   s.description = %q{A plugin for SiriProxy that will allow you to check the latest twitter trends}
 
-  s.rubyforge_project = "siriproxy-twitter-trends"
+  s.rubyforge_project = "siriproxy-twittertrends"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

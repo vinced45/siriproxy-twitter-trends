@@ -5,4 +5,4 @@
 ##########################
     
     - name: 'TwitterTrends'
-      git: 'git://github.com/vinced45/siriproxy-twitter-trends.git'
+      git: 'git://github.com/vinced45/siriproxy-twittertrends.git'
