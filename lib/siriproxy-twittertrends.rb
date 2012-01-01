@@ -45,7 +45,7 @@ class SiriProxy::Plugin::TwitterTrends < SiriProxy::Plugin
 		entry.each do 
 		|article|
 		
-			title = article.first.content.strip
+			title = article.text
       		
       if title.nil?
         title = " "
