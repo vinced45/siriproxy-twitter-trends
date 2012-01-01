@@ -32,7 +32,7 @@ class SiriProxy::Plugin::TwitterTrends < SiriProxy::Plugin
     say "Checking Twitter trends..."
 	  
 		doc = Nokogiri::HTML(open("http://twitter.com/#!/i/discover"))
-    list = doc.css(".trends .flex-module")
+    list = doc.css(".js-trends")
     entry =  doc.css("li a")
     
     if entry.nil?
